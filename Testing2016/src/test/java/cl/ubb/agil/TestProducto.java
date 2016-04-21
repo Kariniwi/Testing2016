@@ -30,11 +30,7 @@ public class TestProducto {
 		int R= producto.getStockFaltante();
 		assertThat (R, is(10));
 	}
-	/*@Test 
-	public void stockNegativo(){
-		producto.stock=-3;
-		producto.getProximaExistencia()
-	}*/
+	
 	@Test 
 	public void addExistenciaEsFalse(){
 		producto.stock=25;
@@ -73,7 +69,6 @@ public class TestProducto {
 			r=false;
 		}
 		assertFalse(r);
-	}
-	
+	}	
 	
 }
